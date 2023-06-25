@@ -3,6 +3,7 @@
 use App\Http\Controllers\About;
 use App\Http\Controllers\Contact;
 use App\Http\Controllers\Home;
+use App\Http\Controllers\SubjectConroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,3 +48,12 @@ Route::controller(Home::class)->group(function(){
 
 Route::get('/about', [About::class, 'index'])->name('user.index');
 Route::get('/contact', [Contact::class, 'index'])->name('user.index');
+
+
+Route::get('/new-subject', [SubjectConroller::class, 'create'])
+->name('newsubject');
+
+Route::get('/subject/{id}', [SubjectConroller::class, 'show'])
+->name('subject.show');
+Route::get('/subjects', [SubjectConroller::class, 'index'])
+->name('subjects.index');
