@@ -9,13 +9,14 @@ class About extends Controller
 {
     public function index(){
 
-        // $userModel = new User();
-        // $userModel->name = 'John Wick2';
-        // $userModel->email = 'john2@gmail.com';
-        // $userModel->password = 'john123$';
-        // $userModel->save();
+        $userModel = new User();
+        $userModel->name = 'John Wick Foruth';
+        $userModel->email = 'john4@gmail.com';
+        $userModel->password = 'john123$';
+        $userModel->save();
+        dd('');
         $users = User::all();
-        dd($users);
+        dd($users[0]->name);
         $data['array'] = [0,12,3,4,5];
         $data['name'] = 'johns';
         return view('home/home',$data);
