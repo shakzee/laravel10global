@@ -32,8 +32,8 @@ Route::redirect('/home','/aboutus',301);
 // Route::get('/homecontroller',[Home::class,'index']);
 
 Route::get('/', function () {
-    //return view('welcome');
-    return 'working..';
+    return view('welcomevite');
+   // return 'working..';
 });
 
 Route::get('/home', function () {
