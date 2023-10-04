@@ -1,3 +1,1 @@
-$(document).ready(function() {
-    alert('working..')
-});
+// alert('vite is working..')

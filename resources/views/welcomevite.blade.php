@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <img src="{{Vite::asset('resources/theme/img/seo.png')}}" class="">
+    <img src="{{Vite::asset('resources/theme/images/img.png')}}" class="">
     <h1>welcome to vite</h1>
     <h2>weclome in h2</h2>
     @vite('resources/js/app.js')
